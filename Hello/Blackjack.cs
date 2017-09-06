@@ -12,27 +12,34 @@ namespace JAMK.IT
     {
       public static void BJ()
         {
-            int myNumber = 17;
             int theirNumber;
-            System.Console.WriteLine("*** BlackJack! ***");
-            System.Console.Write("Can you beat my number? Enter any number between 1-21: ");
-            //reading and converting 
-            theirNumber = System.Convert.ToInt32(System.Console.ReadLine());
-            //comparing that given umber is valid
-            if (theirNumber < 1 || theirNumber > 21)
+            Random rnd;
+            while (true)
             {
-                Console.WriteLine("The given number is out of limits, try again.");
-            }
-            else
-            {
-                //comparing
-                if (theirNumber >= myNumber && theirNumber <= 21)
+                System.Console.WriteLine("*** BlackJack! ***");
+                System.Console.Write("Can you beat my number? Enter any number between 1-21: ");
+                //reading and converting 
+                theirNumber = System.Convert.ToInt32(System.Console.ReadLine());
+                //comparing that given umber is valid
+                rnd = new Random();
+                int MyNumber = rnd.Next(10, 21);
+                if (theirNumber < 1 || theirNumber > 21)
                 {
-                    System.Console.WriteLine("You win.");
+                    Console.WriteLine("The given number is out of limits, try again.");
                 }
                 else
                 {
-                    System.Console.WriteLine("You lose.");
+                    //comparing
+                    if (theirNumber >= MyNumber && theirNumber <= 21)
+                    {
+                        System.Console.WriteLine("You win.");
+                        System.Console.WriteLine("My number was: " + MyNumber);
+                    }
+                    else
+                    {
+                        System.Console.WriteLine("You lose.");
+                        System.Console.WriteLine("My number was: " + MyNumber);
+                    }
                 }
             }
         }
