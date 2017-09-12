@@ -12,6 +12,7 @@ namespace JAMK.IT
     {
       public static void BJ()
         {
+            string Number;
             int theirNumber;
             Random rnd;
             while (true)
@@ -19,7 +20,14 @@ namespace JAMK.IT
                 System.Console.WriteLine("*** BlackJack! ***");
                 System.Console.Write("Can you beat my number? Enter any number between 1-21: ");
                 //reading and converting 
-                theirNumber = System.Convert.ToInt32(System.Console.ReadLine());
+                Number = Console.ReadLine();
+                if (Number == "x")
+                    break;
+                else
+                {
+                    theirNumber = Convert.ToInt32(Number);
+                }
+                
                 //comparing that given umber is valid
                 rnd = new Random();
                 int MyNumber = rnd.Next(10, 21);
@@ -41,6 +49,7 @@ namespace JAMK.IT
                         System.Console.WriteLine("My number was: " + MyNumber);
                     }
                 }
+                
             }
         }
     }
