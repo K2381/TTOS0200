@@ -43,8 +43,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Lab01.cs" />
+    <Compile Include="Lab02_teht1.cs" />
+    <Compile Include="Lab02_teht2.cs" />
+    <Compile Include="Opiskelija.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="televisio.cs" />
+    <Compile Include="Vehicle.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
