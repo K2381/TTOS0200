@@ -10,8 +10,11 @@ namespace JAMK.IT
   {
     static void Main(string[] args)
     {
-      TestaaKiuas();
-      JAMK.IT.TestCat.Testaa();
+            //  TestaaKiuas();
+            // JAMK.IT.TestCat.Testaa();
+            Vahvistin sony = new Vahvistin();
+            sony.Volume = 50;
+            Console.WriteLine(sony.Volume);
     }
 
     //Lab3 Tehtävä 1: Kiuas-luokan testaus
@@ -31,5 +34,17 @@ namespace JAMK.IT
       kiuas.Kosteus = 101;
       Console.WriteLine("Kiukaan kosteus {0}", kiuas.Kosteus);
     }
-  }
+
+        static void GetVolume()
+        {
+            Vahvistin uusivahvistin = new Vahvistin();
+
+            while (true)
+            {
+                Console.WriteLine("Anna voluumi 0-100 >");
+                uusivahvistin.Volume = int.Parse(Console.ReadLine());
+                Console.WriteLine("Volume:> " + uusivahvistin.Volume);
+            }
+        }
+    }
 }
