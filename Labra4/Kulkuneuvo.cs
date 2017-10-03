@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Labra4
 {
-    class Kulkuneuvo
+    public class Kulkuneuvo
     {
         public string Name { get; set; }
         public string Model { get; set; }
@@ -24,10 +24,42 @@ namespace Labra4
             ModelYear = modelyear;
             Color = color;
         }
+
+        public override string ToString()
+        {
+            return Name + " " + Model + " " + ModelYear + " " + Color;
+        }
     }
 
-    public class PolkuPyörä
+    public class PolkuPyörä :Kulkuneuvo
     {
+        public bool GearWheels { get; set; }
+        public string GearName { get; set; }
 
+        public PolkuPyörä()
+        {
+
+        }
+
+        public override string ToString()
+        {
+            return base.ToString() + GearWheels + " " + GearName;
+        }
+    }
+
+    public class Boat :Kulkuneuvo
+    {
+        public int SeatCount { get; set; }
+        public string BoatType { get; set; }
+
+        public Boat()
+        {
+
+        }
+
+        public override string ToString()
+        {
+            return base.ToString() +" " + SeatCount + " " + BoatType;
+        }
     }
 }
