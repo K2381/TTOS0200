@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26430.16
+VisualStudioVersion = 15.0.26430.13
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hello", "Hello\Hello.csproj", "{43D3A9D9-D831-46CD-BE33-1DE6770DB406}"
 EndProject
@@ -24,6 +24,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Laskin", "JokuDemo\Laskin.csproj", "{9FBDA26D-7E39-4028-AB05-B928AAB7FB07}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LaskinTests", "LaskinTests\LaskinTests.csproj", "{AE55298E-3247-451D-8B34-0734F5A36CED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Labra8", "Labra8\Labra8.csproj", "{4520D5AE-CD74-4891-A146-4089DFDD653C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -75,6 +77,10 @@ Global
 		{AE55298E-3247-451D-8B34-0734F5A36CED}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AE55298E-3247-451D-8B34-0734F5A36CED}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AE55298E-3247-451D-8B34-0734F5A36CED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4520D5AE-CD74-4891-A146-4089DFDD653C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4520D5AE-CD74-4891-A146-4089DFDD653C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4520D5AE-CD74-4891-A146-4089DFDD653C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4520D5AE-CD74-4891-A146-4089DFDD653C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
