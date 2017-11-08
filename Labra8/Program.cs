@@ -101,31 +101,42 @@ namespace Labra8
 
         public static void TestaaKala()
         {
-            List<Kalastaja> Rekisteri = new List<Kalastaja>();
-            Rekisteri.Add(new Kalastaja("Kirsi Kernel", "020-12345678"));
-            Rekisteri[0].Kala.Add(new Kala("Pike", 120, 50, "Jyväskylä","The lake of jyväskylä"));
-            Rekisteri[0].Kala.Add(new Kala("Salmon", 190, 1123.2, "The Northren edge of Finland","River Teno"));
-
-            foreach (Kalastaja x in Rekisteri)
+            try
             {
-                foreach (Kala i in x.Kala)
+
+
+
+                List<Kalastaja> Rekisteri = new List<Kalastaja>();
+                Rekisteri.Add(new Kalastaja("Kirsi Kernel", "020-12345678"));
+                Rekisteri[0].Kala.Add(new Kala("Pike", 120, 50, "Jyväskylä", "The lake of jyväskylä"));
+                Rekisteri[0].Kala.Add(new Kala("Salmon", 190, 1123.2, "The Northren edge of Finland", "River Teno"));
+
+                foreach (Kalastaja x in Rekisteri)
                 {
-                    Console.WriteLine("Fisher: {0} got a new fish\n", x.Nimi);
-                    Console.WriteLine("-specie: {0}\n-length: {1} cm\n-weight: {2} kg\n-location: {3} \n-Lake: {4}\n", i.Laji, i.Pituus, i.Paino, i.Paikka,i.Järvi);
+                    foreach (Kala i in x.Kala)
+                    {
+                        Console.WriteLine("Fisher: {0} got a new fish\n", x.Nimi);
+                        Console.WriteLine("-specie: {0}\n-length: {1} cm\n-weight: {2} kg\n-location: {3} \n-Lake: {4}\n", i.Laji, i.Pituus, i.Paino, i.Paikka, i.Järvi);
+                    }
+                }
+
+                Console.WriteLine("\nSorted register (Painavammasta kevyempään)\n");
+                Rekisteri[0].Kala.Sort((x, y) => y.Paino.CompareTo(x.Paino));
+
+                foreach (Kalastaja x in Rekisteri)
+                {
+                    Console.WriteLine("Fisherman: {0} has got following fishes: \n", x.Nimi);
+                    foreach (Kala i in x.Kala)
+                    {
+
+                        Console.WriteLine("-specie: {0}\n-length: {1} cm\n-weight: {2} kg\n-location: {3} \n-Lake: {4}\n", i.Laji, i.Pituus, i.Paino, i.Paikka, i.Järvi);
+                    }
                 }
             }
-           
-            Console.WriteLine("\nSorted register (Painavammasta kevyempään)\n");
-            Rekisteri[0].Kala.Sort((x, y) => y.Paino.CompareTo(x.Paino));
-
-            foreach (Kalastaja x in Rekisteri)
+            catch (Exception)
             {
-                Console.WriteLine("Fisherman: {0} has got following fishes: \n", x.Nimi);
-                foreach (Kala i in x.Kala)
-                {
-                    
-                    Console.WriteLine("-specie: {0}\n-length: {1} cm\n-weight: {2} kg\n-location: {3} \n-Lake: {4}\n", i.Laji, i.Pituus, i.Paino, i.Paikka, i.Järvi);
-                }
+
+                throw;
             }
         }
        
