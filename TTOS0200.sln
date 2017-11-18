@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26430.16
+VisualStudioVersion = 15.0.26430.13
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hello", "Hello\Hello.csproj", "{43D3A9D9-D831-46CD-BE33-1DE6770DB406}"
 EndProject
@@ -30,6 +30,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfDemo", "WpfDemo\WpfDemo.csproj", "{2E17BD49-DBD0-4B16-9F6F-7F2CA2B9BA24}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoLaskuri", "AutoLaskuri\AutoLaskuri.csproj", "{AD4C45B8-6477-4FBA-A487-EFE0FD14769C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Valuutta Laskuri", "WpfApp1\Valuutta Laskuri.csproj", "{EEFACE47-9549-4574-8521-F57349374CB6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -93,6 +95,10 @@ Global
 		{AD4C45B8-6477-4FBA-A487-EFE0FD14769C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AD4C45B8-6477-4FBA-A487-EFE0FD14769C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AD4C45B8-6477-4FBA-A487-EFE0FD14769C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EEFACE47-9549-4574-8521-F57349374CB6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EEFACE47-9549-4574-8521-F57349374CB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EEFACE47-9549-4574-8521-F57349374CB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EEFACE47-9549-4574-8521-F57349374CB6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
