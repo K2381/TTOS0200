@@ -1,0 +1,15 @@
+﻿<Window x:Class="Liiga.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Liiga"
+        mc:Ignorable="d"
+        Title="Liiga" Height="350" Width="525">
+    <Grid>
+        <StackPanel Orientation="Horizontal">
+            <Button x:Name="btnHae" Content="Hae pelaajat" Margin="10,10,10,260" Width="80" Click="btnHae_Click"></Button>
+        </StackPanel>
+        <DataGrid x:Name="dgpelaajat" Margin="103,10,10,10" SelectionChanged="dgpelaajat_SelectionChanged"></DataGrid>
+    </Grid>
+</Window>

@@ -1,0 +1,22 @@
+﻿<Window x:Class="ShoppingList.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ShoppingList"
+        mc:Ignorable="d"
+        Title="Shopping list" Height="350" Width="525">
+    <Grid>
+        <StackPanel>
+            <CheckBox x:Name="chkmilk" Content="Milk" Margin="5" Checked="chkmilk_Checked"></CheckBox>
+            <CheckBox x:Name="chkbutter" Content="Butter" Margin="5" Checked="chkbutter_Checked"></CheckBox>
+            <CheckBox x:Name="chkbeer" Content="Beer" Margin="5" Checked="chkbeer_Checked"></CheckBox>
+            <CheckBox x:Name="chkchicken" Content="Chicken" Margin="5" Checked="chkchicken_Checked"></CheckBox>
+            <CheckBox x:Name="chklemonade" Content="Lemonade" Margin="5" Checked="chklemonade_Checked"></CheckBox>
+            <Button x:Name="btnbuy" Content="Buy" Margin="10" Height="30"  Width="55" HorizontalAlignment="Left" Click="btnbuy_Click" ></Button>
+            <TextBlock FontSize="20" Margin="5">Shopping List:</TextBlock>
+            <TextBox x:Name="txtboxlist" Height="100" Margin="5,0"></TextBox>
+        </StackPanel>
+
+    </Grid>
+</Window>

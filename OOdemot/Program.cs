@@ -12,9 +12,10 @@ namespace JAMK.IT
     {
             //  TestaaKiuas();
             // JAMK.IT.TestCat.Testaa();
-            Vahvistin sony = new Vahvistin();
-            sony.Volume = 50;
-            Console.WriteLine(sony.Volume);
+            //Vahvistin sony = new Vahvistin();
+            //sony.Volume = 50;
+            //Console.WriteLine(sony.Volume);
+            TestaaJoukkue.Testaa();
     }
 
     //Lab3 Tehtävä 1: Kiuas-luokan testaus
