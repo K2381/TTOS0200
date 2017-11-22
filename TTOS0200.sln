@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26430.13
+VisualStudioVersion = 15.0.26430.16
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hello", "Hello\Hello.csproj", "{43D3A9D9-D831-46CD-BE33-1DE6770DB406}"
 EndProject
@@ -38,6 +38,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Liiga", "Liiga\Liiga.csproj", "{1BF6D286-F23A-42E2-A6E1-A800099AC352}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LottoKone", "LottoKone\LottoKone.csproj", "{128E5A8D-670D-4524-AEB4-2D050776DB54}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Amk", "Amk\Amk.csproj", "{CD7CCE98-681D-4C24-8A20-7862D312418C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -117,6 +119,10 @@ Global
 		{128E5A8D-670D-4524-AEB4-2D050776DB54}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{128E5A8D-670D-4524-AEB4-2D050776DB54}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{128E5A8D-670D-4524-AEB4-2D050776DB54}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CD7CCE98-681D-4C24-8A20-7862D312418C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD7CCE98-681D-4C24-8A20-7862D312418C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD7CCE98-681D-4C24-8A20-7862D312418C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD7CCE98-681D-4C24-8A20-7862D312418C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
